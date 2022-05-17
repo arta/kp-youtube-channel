@@ -50,10 +50,7 @@ h1 {
 /* ################# */
 /* ANCHORS & BUTTONS */
 /* ----------------- */
-.btn-group {
-  display: relative;
-  margin: 2em 0;
-}
+.a-btn + .a-btn { margin-left: 1em }
 
 .a-btn {
   border-radius: 5px;
@@ -64,8 +61,6 @@ h1 {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-.a-btn + .a-btn { margin-left: 1em; }
 
 .a-btn--secondary {
   background: var(--foreground);
@@ -81,6 +76,11 @@ h1 {
 /* ###### */
 /* LAYOUT */
 /* ------ */
+.btn-group {
+  display: relative;
+  margin: 2em 0;
+}
+
 .section-intro {
   align-content: center;
   background: linear-gradient(120deg, var(--clr-primary), var(--clr-secondary));
