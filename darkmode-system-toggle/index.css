@@ -40,41 +40,36 @@ body {
 h1 {
   font-size: calc(3rem + 7vw);
   font-family: var(--ff-title);
-  margin: 0 0 0.25em;
   line-height: 1;
+  margin: 0 0 0.25em;
 }
 
-.subtitle {
-  max-width: 600px;
-}
+.p-subtitle { max-width: 600px; }
 
 
 /* ################# */
 /* ANCHORS & BUTTONS */
 /* ----------------- */
 .btn-group {
-  margin: 2em 0;
   display: relative;
+  margin: 2em 0;
 }
 
 .btn {
-  padding: 1em 2em;
-  text-decoration: none;
-  text-transform: uppercase;
   border-radius: 5px;
-  position: relative;
   display: inline-block;
   line-height: 1;
+  padding: 1em 2em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.btn+.btn {
-  margin-left: 1em;
-}
+.btn + .btn { margin-left: 1em; }
 
 .btn--secondary {
   background: var(--foreground);
   color: var(--background);
-  // border: currentColor solid 2px;
 }
 
 .btn--accent {
@@ -83,14 +78,14 @@ h1 {
 }
 
 .btn::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: var(--foreground) 2px solid;
-  left: -4px;
-  top: 4px;
   border-radius: inherit;
+  border: var(--foreground) 2px solid;
+  content: "";
+  height: 100%;
+  left: -4px;
+  position: absolute;
+  top: 4px;
+  width: 100%;
   z-index: -1;
 }
 
@@ -99,17 +94,15 @@ h1 {
 /* LAYOUT */
 /* ------ */
 .section-intro {
-  height: 80vh;
-  padding: 10em 0;
+  align-content: center;
+  background: linear-gradient(120deg, var(--clr-primary), var(--clr-secondary));
   display: grid;
   grid-template-columns: minmax(2em, 1fr) minmax(80vw, 860px) minmax(2em, 1fr);
-  background: linear-gradient(120deg, var(--clr-primary), var(--clr-secondary));
-  align-content: center;
+  height: 80vh;
+  padding: 10em 0;
 }
 
-.section-intro>* {
-  grid-column: 2 / 3;
-}
+.section-intro>* { grid-column: 2 / 3; }
 
 
 /* ##### */
