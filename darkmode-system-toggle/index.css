@@ -55,7 +55,7 @@ h1 {
   margin: 2em 0;
 }
 
-.btn {
+.a-btn {
   border-radius: 5px;
   display: inline-block;
   line-height: 1;
@@ -65,28 +65,16 @@ h1 {
   text-transform: uppercase;
 }
 
-.btn + .btn { margin-left: 1em; }
+.a-btn + .a-btn { margin-left: 1em; }
 
-.btn--secondary {
+.a-btn--secondary {
   background: var(--foreground);
   color: var(--background);
 }
 
-.btn--accent {
+.a-btn--accent {
   background: var(--clr-accent);
   color: var(--foreground);
-}
-
-.btn::after {
-  border-radius: inherit;
-  border: var(--foreground) 2px solid;
-  content: "";
-  height: 100%;
-  left: -4px;
-  position: absolute;
-  top: 4px;
-  width: 100%;
-  z-index: -1;
 }
 
 
