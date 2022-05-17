@@ -71,13 +71,13 @@ h1 {
   margin-left: 1em;
 }
 
-.btn-secondary {
+.btn--secondary {
   background: var(--foreground);
   color: var(--background);
   // border: currentColor solid 2px;
 }
 
-.btn-accent {
+.btn--accent {
   background: var(--clr-accent);
   color: var(--foreground);
 }
@@ -98,7 +98,7 @@ h1 {
 /* ###### */
 /* LAYOUT */
 /* ------ */
-.intro {
+.section-intro {
   height: 80vh;
   padding: 10em 0;
   display: grid;
@@ -107,7 +107,7 @@ h1 {
   align-content: center;
 }
 
-.intro>* {
+.section-intro>* {
   grid-column: 2 / 3;
 }
 
