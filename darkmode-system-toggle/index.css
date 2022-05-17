@@ -1,0 +1,37 @@
+/* ###### */
+/* GLOBAL */
+/* ------ */
+:root {
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  /* border: 1px dotted hotpink; */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* ########## */
+/* TYPOGRAPHY */
+/* ---------- */
+
+
+/* ################# */
+/* ANCHORS & BUTTONS */
+/* ----------------- */
+
+
+/* ###### */
+/* LAYOUT */
+/* ------ */
+
+
+/* ##### */
+/* UTILS */
+/* ----- */
