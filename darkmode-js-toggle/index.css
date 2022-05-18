@@ -103,12 +103,12 @@ h1 {
 
 .btn-group { margin: 2em 0; }
 
-.click-here {
+/* .click-here {
   position: absolute;
   right: 1.5em;
   top: 3em;
   width: 100px;
-}
+} */
 
 .section-intro {
   align-content: center;
