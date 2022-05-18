@@ -2,6 +2,18 @@
 /* GLOBAL */
 /* ------ */
 :root {
+  --clr-light: #fdffc4;
+  --clr-dark: #00332a;
+  --clr-primary: #dbffa2;
+  --clr-secondary: #c3fcf2;
+  --clr-accent: #ff7750;
+
+  --background: var(--clr-light);
+  --color: var(--clr-dark);
+
+  --ff-body: "Assistant", sans-serif;
+  --ff-title: "Playfair Display", serif;
+
   font-size: 100%;
 }
 
@@ -13,6 +25,11 @@
 }
 
 body {
+  background: var(--background);
+  color: var(--color);
+  font-family: var(--ff-body);
+  font-size: 18px;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -20,16 +37,64 @@ body {
 /* ########## */
 /* TYPOGRAPHY */
 /* ---------- */
+h1 {
+  font-size: calc(3rem + 7vw);
+  font-family: var(--ff-title);
+  line-height: 1;
+  margin: 0 0 0.25em;
+}
+
+.p-subtitle {
+  max-width: 600px;
+}
 
 
 /* ################# */
 /* ANCHORS & BUTTONS */
 /* ----------------- */
+.a-btn+.a-btn {
+  margin-left: 1em
+}
+
+.a-btn {
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 1;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.a-btn--secondary {
+  background: var(--color);
+  color: var(--background);
+}
+
+.a-btn--accent {
+  background: var(--clr-accent);
+  color: var(--color);
+}
 
 
 /* ###### */
 /* LAYOUT */
 /* ------ */
+.btn-group {
+  margin: 2em 0;
+}
+
+.section-intro {
+  align-content: center;
+  background: linear-gradient(120deg, var(--clr-primary), var(--clr-secondary));
+  display: grid;
+  grid-template-columns: minmax(2em, 1fr) minmax(80vw, 860px) minmax(2em, 1fr);
+  height: 80vh;
+  padding: 10em 0;
+}
+
+.section-intro>* {
+  grid-column: 2 / 3;
+}
 
 
 /* ##### */
