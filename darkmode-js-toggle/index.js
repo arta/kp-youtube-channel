@@ -1,18 +1,18 @@
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem('darkMode')
 
-const darkModeToggle = document.querySelector('#btn-dark-mode-toggle')
+const btnDarkModeToggle = document.querySelector('#btn-dark-mode-toggle')
 
 const enableDarkMode = () => {
   // 1. Add the class to the body
-  document.body.classList.add('darkmode')
+  document.body.classList.add('dark-mode')
   // 2. Update darkMode in localStorage
-  localStorage.setItem('darkMode', 'enabled')
+  localStorage.setItem('darkMode', 'on')
 }
 
 const disableDarkMode = () => {
   // 1. Remove the class from the body
-  document.body.classList.remove('darkmode')
+  document.body.classList.remove('dark-mode')
   // 2. Update darkMode in localStorage
   localStorage.removeItem('darkMode')
 }
@@ -24,7 +24,7 @@ if (darkMode) {
 }
 
 // When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
+btnDarkModeToggle.addEventListener('click', () => {
   // get their darkMode setting
   darkMode = localStorage.getItem('darkMode')
 
