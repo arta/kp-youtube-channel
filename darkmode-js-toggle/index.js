@@ -1,19 +1,19 @@
 const btnDarkModeToggle = document.getElementById('btn-dark-mode-toggle')
 
-let darkModeOn = localStorage.getItem('darkModeOn')
+let darkModeOn = localStorage.getItem('darkMode')
 
 function turnDarkModeOn() {
   document.body.classList.add('dark-mode')
-  localStorage.setItem('darkModeOn', 'on')
+  localStorage.setItem('darkMode', 'on')
 }
 
 function turnDarkModeOff() {
   document.body.classList.remove('dark-mode')
-  localStorage.removeItem('darkModeOn')
+  localStorage.removeItem('darkMode')
 }
 
 function toggleDarkMode() {
-  darkModeOn = localStorage.getItem('darkModeOn')
+  darkModeOn = localStorage.getItem('darkMode')
 
   if (darkModeOn) { turnDarkModeOff() }
   else { turnDarkModeOn() }
