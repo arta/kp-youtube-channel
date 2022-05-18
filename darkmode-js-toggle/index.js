@@ -13,9 +13,11 @@ function turnDarkModeOff() {
   localStorage.removeItem('darkModeOn')
 }
 
-btnDarkModeToggle.addEventListener('click', () => {
+function toggleDarkMode() {
   darkModeOn = localStorage.getItem('darkModeOn')
 
   if (darkModeOn) { turnDarkModeOff() }
   else { turnDarkModeOn() }
-})
+}
+
+btnDarkModeToggle.addEventListener('click', toggleDarkMode)
