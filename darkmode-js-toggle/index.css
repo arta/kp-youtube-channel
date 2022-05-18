@@ -33,14 +33,15 @@ body {
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --clr-primary: #202302;
-    --clr-secondary: #00100d;
+.darkmode {
+  --clr-light: #fdffc4;
+  --clr-dark: #00332a;
+  --clr-primary: #202302;
+  --clr-secondary: #00100d;
+  --clr-accent: #ff7750;
 
-    --background: var(--clr-dark);
-    --color: var(--clr-light);
-  }
+  --background: var(--clr-dark);
+  --color: var(--clr-light);
 }
 
 
@@ -81,6 +82,21 @@ h1 {
   color: var(--color);
 }
 
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
 
 /* ###### */
 /* LAYOUT */
@@ -88,6 +104,14 @@ h1 {
 .section-intro > * { grid-column: 2 / 3; }
 
 .btn-group { margin: 2em 0; }
+
+.click-here {
+  /* SVG icon from Font Awesome */
+  width: 100px;
+  right: 1.5em;
+  position: absolute;
+  top: 3em;
+}
 
 .section-intro {
   align-content: center;
