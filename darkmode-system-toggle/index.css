@@ -11,8 +11,8 @@
   --background: var(--clr-light);
   --color: var(--clr-dark);
 
-  --ff-title: "Playfair Display", serif;
   --ff-body: "Assistant", sans-serif;
+  --ff-title: "Playfair Display", serif;
 
   font-size: 100%;
 }
