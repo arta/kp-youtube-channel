@@ -1,7 +1,6 @@
 const btnDarkModeToggle = document.getElementById('btn-dark-mode-toggle')
-let darkModeOn = localStorage.getItem('darkModeOn')
 
-if (darkModeOn) { turnDarkModeOn() }
+let darkModeOn = localStorage.getItem('darkModeOn')
 
 function turnDarkModeOn() {
   document.body.classList.add('dark-mode')
@@ -19,5 +18,7 @@ function toggleDarkMode() {
   if (darkModeOn) { turnDarkModeOff() }
   else { turnDarkModeOn() }
 }
+
+if (darkModeOn) { turnDarkModeOn() }
 
 btnDarkModeToggle.addEventListener('click', toggleDarkMode)
