@@ -1,7 +1,7 @@
 // check for saved 'darkModeOn' in localStorage
 let darkModeOn = localStorage.getItem('darkModeOn')
 
-const btnDarkModeToggle = document.querySelector('#btn-dark-mode-toggle')
+const btnDarkModeToggle = document.getElementById('btn-dark-mode-toggle')
 
 function turnDarkModeOn() {
   // 1. Add the class to the body
