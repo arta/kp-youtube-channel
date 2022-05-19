@@ -1,20 +1,18 @@
 const btnDarkModeToggle = document.getElementById('btn-dark-mode-toggle')
-const bodyClassList = document.body.classList
 
 let darkModeIsPersisted = localStorage.getItem('darkMode')
 
 function toggleDarkMode() {
-  // Confusing to go thru in mind (w/o debugger) on index.html (re)load, so:
-  // : when index (re)loads, bodyClassList never has `dark-mode`
-  // : the .toggle() here adds `dark-mode` on every index (re)load
-  bodyClassList.toggle('dark-mode')
+  // When index (re)loads, ..body.classList does not have `dark-mode`
+  document.body.classList.toggle('dark-mode')
 
-  if (bodyClassList.contains('dark-mode')) {
+  if (document.body.classList.contains('dark-mode')) {
     if (!darkModeIsPersisted) localStorage.setItem('darkMode', 'on')
   }
   else localStorage.removeItem('darkMode')
 }
 
+// <script src="index.js" defer></script> runs this on index.html (re)load
 if (darkModeIsPersisted) toggleDarkMode()
 
 btnDarkModeToggle.addEventListener('click', toggleDarkMode)
