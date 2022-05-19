@@ -23,27 +23,26 @@ btnDarkModeToggle.addEventListener('click', toggleDarkMode)
 // =============================================================================
 
 // const btnDarkModeToggle = document.getElementById('btn-dark-mode-toggle')
-// const bodyClassList = document.body.classList
 
 // let darkModeOn = localStorage.getItem('darkMode')
 
 // function turnDarkModeOn() {
-//   bodyClassList.add('dark-mode')
+//   document.body.classList.add('dark-mode')
 //   localStorage.setItem('darkMode', 'on')
 // }
 
 // function turnDarkModeOff() {
-//   bodyClassList.remove('dark-mode')
+//   document.body.classList.remove('dark-mode')
 //   localStorage.removeItem('darkMode')
 // }
 
 // function toggleDarkMode() {
 //   darkModeOn = localStorage.getItem('darkMode')
 
-//   if (darkModeOn) { turnDarkModeOff() }
-//   else { turnDarkModeOn() }
+//   if (darkModeOn) turnDarkModeOff()
+//   else turnDarkModeOn()
 // }
 
-// if (darkModeOn) { turnDarkModeOn() }
+// if (darkModeOn) turnDarkModeOn()
 
 // btnDarkModeToggle.addEventListener('click', toggleDarkMode)
